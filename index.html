@@ -46,7 +46,45 @@
 			<div class="col-sm-4">			 
 				<h3>Share</h3>			 
 				<p>分享大家看得懂用得上的学习总结才能表明我学会了.</p>
-				<button type="button" class='btn btn-info'>去看</button>			  
+				<button type="button" class='btn btn-info' data-toggle="modal" data-target="#myShareModal">去看</button>	
+
+				<!-- Share List Dialog -->	
+				<div id="myShareModal" class="modal fade" role="dialog">
+				  <div class="modal-dialog">
+
+					<!-- Modal content-->
+					<div class="modal-content">
+					  <div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title">Share List</h4>
+					  </div>
+					  <div class="modal-body">
+						<p>不断完善的学习总结</p>
+						  <table class="table table-striped">
+							<thead>
+							  <tr>
+								<th>Subject</th>
+								<th>Note</th>
+								<th>Sharing Link</th>
+							  </tr>
+							</thead>
+							<tbody>
+							  <tr>
+								<td>Cucumber & BDD</td>
+								<td>Cucumber Get Started</td>
+								<td><a href="share\bdd\cucumber.getstarted\index.html">Content</a></td>
+							  </tr>
+							 
+							</tbody>
+						  </table>   
+					  </div>
+					  <div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					  </div>
+					</div>
+
+				  </div>
+				</div>
 			</div>
 			<div class="col-sm-4">
 				<h3>Study</h3>
