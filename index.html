@@ -27,6 +27,7 @@
 			height:50px
 		}
 	</style>
+	
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -42,34 +43,70 @@
 		</div>
 		
 		<div class="row">
-			<div class="col-sm-4">
-			  <h3>Share</h3>
-			  <p>分享大家看得懂用得上的学习总结才能表明我学会了.</p>
-			   <button>去看</button>
+			<div class="col-sm-4">			 
+				<h3>Share</h3>			 
+				<p>分享大家看得懂用得上的学习总结才能表明我学会了.</p>
+				<button type="button" class='btn btn-info'>去看</button>			  
 			</div>
 			<div class="col-sm-4">
-			  <h3>Study</h3>
-			  <p>借助Github强大的功能，以敏捷流程来进行学习.</p>
-			  <button>去学</button>
+				<h3>Study</h3>
+				<p>借助Github强大的功能，以敏捷流程来进行学习.</p>
+				<button type="button" class='btn btn-info'>去学</button>
 			</div>
 			<div class="col-sm-4">
-			  <h3>Resource</h3>
-			  <p>外部优秀资料与资源链接.</p>	
-			  <button>去拿</button>
+				<h3>Resource</h3>
+				<p>外部优秀资料与资源链接.</p>	
+				<button type="button" class='btn btn-info'>去拿</button>
 			</div>
 		</div>
 		
 		<div class="row">
 			<div class="col-sm-4">
-			  <h3>Projects</h3>
-			  <p>我的开源实践项目.</p>
-			  <button>去Fork</button>
+				<h3>Projects</h3>
+				<p>我的开源实践项目.</p>
+				<button type="button" class='btn btn-info'>去Fork</button>
 			</div>
 			
 			<div class="col-sm-8">
-			  <h3>About</h3>
-			  <p>一些备注说明.</p>
-			  <button>了解</button>
+				<h3>About</h3>
+				<p>一些备注说明.</p>
+				<button type="button" class='btn btn-info' data-toggle="modal" data-target="#myAboutModal">了解</button>
+			
+				<!-- About Modal -->
+				<div id="myAboutModal" class="modal fade" role="dialog">
+				  <div class="modal-dialog">
+
+					<!-- Modal content-->
+					<div class="modal-content">
+					  <div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title">About</h4>
+					  </div>
+					  <div class="modal-body">
+						<p>Some text in the modal.</p>
+						<dl>
+							<dt>Who</dt>
+							<dd>- 沈扬同学，爱好吉他和跑步的 IT 技术爱好者; 持续改善敏捷开发实践的探索者.</dd>
+							<dt>Tech Stack</dt>
+							<dd>- 从前台 javascript 到后端 .NET 服务生态及数据库; </dd>
+							<dd>- 移动端专注在 Xamarin 生态和原生 Android 生态;</dd>
+							<dd>- 团队敏捷开发实践持续改善及系统集成. </dd>
+							<dt>What</dt>
+							<dd>- 用敏捷的方式开发与学习; </dd>
+							<dd>- 以开源开放的形式分享和交流.</dd>
+							<dt>Communication</dt>
+							<dd>- <span class="glyphicon glyphicon-envelope"></span>: biztudio#outlook.com (Replace # to @)
+							</dd>
+						  </dl>    
+					  </div>
+					  <div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					  </div>
+					</div>
+
+				  </div>
+				</div>
+			
 			</div>
 			
 		</div>
@@ -90,13 +127,14 @@
     </footer>
 	
 	
+	
+	
     <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-    
+    <script src="http://cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
 	<!-- For Bootstrap -->
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> 
-	<!-- Include all compiled plugins (below), or include individual files as needed -->
-	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-
+	
+	
 	</body>
 </html>
