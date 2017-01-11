@@ -88,8 +88,29 @@
 			</div>
 			<div class="col-sm-4">
 				<h3>Study</h3>
-				<p>借助Github强大的功能，以敏捷流程来进行学习.</p>
-				<button type="button" class='btn btn-info'>去学</button>
+				<p>借助 Github + ZenHub 以敏捷流程来进行学习.</p>
+				<button type="button" class='btn btn-info'  data-toggle="modal" data-target="#myStudyBoardModal" >去学</button>
+				
+				<div id="myStudyBoardModal" class="modal fade" role="dialog">
+				  <div class="modal-dialog modal-lg">
+
+					<!-- Modal content-->
+					<div class="modal-content">
+					  <div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title">敏捷学习</h4>
+					  </div>
+					  <div class="modal-body">
+						<img src="images\zenhubbord.png" class="img-thumbnail" alt="StudyInAgaileWay" \>
+						
+					  </div>
+					  <div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					  </div>
+					</div>
+
+				  </div>
+				</div>
 			</div>
 			<div class="col-sm-4">
 				<h3>Resource</h3>
@@ -102,12 +123,13 @@
 			<div class="col-sm-4">
 				<h3>Projects</h3>				
 				<p>Talk is cheap, show me the code.</p>
-				<button type="button" class='btn btn-info'>去Fork</button>
+				<button type="button" class='btn btn-info' onclick='window.open("https://github.com/biztudioteam/")'>去Fork</button>
+								
 			</div>
 			
 			<div class="col-sm-8">
 				<h3>About</h3>
-				<p>一些备注说明.</p>
+				<p>那些事儿的说明.</p>
 				<button type="button" class='btn btn-info' data-toggle="modal" data-target="#myAboutModal">了解</button>
 			
 				<!-- About Modal -->
@@ -121,7 +143,7 @@
 						<h4 class="modal-title">About</h4>
 					  </div>
 					  <div class="modal-body">
-						<p>Biztudio 那些事儿</p>
+						<p>Biztudio (since 2017) 那些事儿</p>
 						<dl>
 							<dt>Who</dt>
 							<dd>- 沈扬同学，爱好吉他和跑步的 IT 技术爱好者; 持续改善敏捷开发实践的探索者.</dd>
@@ -159,7 +181,8 @@
 			<p>Hosted on GitHub Pages &mdash; </p>
 			<ul class="bs-docs-footer-links muted">
 			  <li>当前版本： v1.0.0</li>
-			  <li>维护人：沈扬</li>			  
+			  <li>维护人：沈扬</li>
+			  <li>Since 2017</i>	
 			</ul>
 		</div>	
     </footer>
@@ -172,7 +195,6 @@
 	<!-- For Bootstrap -->
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> 
-	
-	
+		
 	</body>
 </html>
