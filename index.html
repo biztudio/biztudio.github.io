@@ -121,7 +121,44 @@
 			<div class="col-sm-4">
 				<h3>Resource</h3>
 				<p>外部优秀资料与资源链接.</p>	
-				<button type="button" class='btn btn-info'>去拿</button>
+				<button type="button" class='btn btn-info'  data-toggle="modal" data-target="#myResourceModal" >去拿</button>
+				
+				<div id="myResourceModal" class="modal fade" role="dialog">
+				  <div class="modal-dialog modal-lg">
+
+					<!-- Modal content-->
+					<div class="modal-content">
+					  <div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title">敏捷学习</h4>
+					  </div>
+					  <div class="modal-body">
+						 <table class="table table-striped">
+							<thead>
+							  <tr>
+								<th>Subject</th>
+								<th>Note</th>
+								<th>Link</th>
+							  </tr>
+							</thead>
+							<tbody>
+							  <tr>
+								<td>Mind Map Maker</td>
+								<td>HTML5 Web App to make Mind Maps which can be saved as json file</td>
+								<td><a href="mindmaps\bin\index.html">Open</a></td>
+							  </tr>
+														 
+							</tbody>
+						  </table>   
+					  </div>
+					  <div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					  </div>
+					</div>
+
+				  </div>
+				</div>
+				
 			</div>
 		</div>
 		
