@@ -25,12 +25,18 @@
         <div id='app'>
             <div class="greeting">
                 基金
-                <input type="text" style="width:200px" placeholder="过滤条件, 比如代码、名称" v-model="mixed_fundfilter" @change="relist_fund"/>
+                <el-input
+                    placeholder="过滤条件, 比如代码、名称"
+                    suffix-icon="el-icon-search"
+                    style="width:268px"
+                    v-model="mixed_fundfilter"
+                    @change="relist_fund">
+                </el-input>
             </div>   
 
             <hr />
             <div>
-                <fundgrid :filter='mixed_fundfilter'></fundgrid>
+                <fundgrid_mb :filter='mixed_fundfilter'></fundgrid_mb>
             </div>        
         </div>
 
