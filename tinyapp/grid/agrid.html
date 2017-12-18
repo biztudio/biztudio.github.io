@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=utf8">
+        <title>Alphabet Shult Grid</title>
+        <link rel="shortcut icon" href="./favicon.ico" />
+        <link rel="stylesheet" href="./docs.min.css" type="text/css" />
+        <!-- import stylesheet -->
+        <link rel="stylesheet" href="//unpkg.com/iview/dist/styles/iview.css">
+        <style media=print type="text/css">  
+            .noprint{visibility:hidden}  
+        </style>   
+        <style>
+                .divtitle
+                {
+                    background-color:#2CA3E7;
+                    color:#FFFFFF;
+                }
+                
+                .footerStyle {			
+                    background-color:#FFFFFF;
+                }
+            </style>
+            
+    </head>
+
+    <body>
+        <div id='capp'>
+            <div class="noprint">
+                Group:  
+                <Select v-model="group_model" filterable>
+                    <Option v-for="item in group_aln_list" :value="item.value" :key="item.value">{{ item.label }}</Option>
+                </Select>
+                Mode: 
+                <Select v-model="case_mode_model" filterable>
+                    <Option v-for="item in case_list" :value="item.value" :key="item.value">{{ item.label }}</Option>
+                </Select>
+                <a target="blank" href='https://en.wikipedia.org/wiki/Schulte_table'>About Schulte Grid</a>
+                <br />
+                <span>Print the web page to practice.</span>
+                <hr />
+            </div>
+            <div>
+                <alphabetgrid id = 'mxmnc' :group='group_model' :case_mode='case_mode_model'></alphabetgrid>
+            </div>    
+        </div>
+
+        
+        <!-- referred common lib, such as vue -->
+        <script src="./vendor.bundle.js" ></script>
+        <!-- js the app itself -->
+        <script src="./app.bundle.js" ></script>
+        
+    </body>    
+</html>
