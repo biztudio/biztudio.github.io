@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html;charset=utf8">
-        <title>Sudoku</title>
+        <title>Sudoku Ninja</title>
         <link rel="shortcut icon" href="./favicon.ico" />
         <link rel="stylesheet" href="./docs.min.css" type="text/css" />
         <!-- import stylesheet -->
@@ -35,13 +35,16 @@
                         <Select v-model="sudoku_mode_model" filterable>
                             <Option v-for="item in sudoku_mode_list" :value="item.value" :key="item.value">{{ item.label }}</Option>
                         </Select>
-                        <span>Please use web browser Chrome / Firefox / Opera</span>
+                       
                         <br />
                         <hr />
               </div>       
               <div>
                 <sudoku id = 'mxmnc' :level='sudoku_level_model' :mode = 'sudoku_mode_model'></sudoku>
               </div>    
+        </div>
+        <div class="noprint" style="top:550px; left:10px;position:absolute;">
+            <span >Please use web browser <strong> Chrome / Firefox / Opera </strong>to open this sudoku.</span>
         </div>
 
         
