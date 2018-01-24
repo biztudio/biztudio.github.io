@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=utf8">
+        <title>Sudoku</title>
+        <link rel="shortcut icon" href="./favicon.ico" />
+        <link rel="stylesheet" href="./docs.min.css" type="text/css" />
+        <!-- import stylesheet -->
+        <link rel="stylesheet" href="//unpkg.com/iview/dist/styles/iview.css">
+        <style media=print type="text/css">  
+            .noprint{visibility:hidden}  
+        </style>   
+        <style>
+                .divtitle
+                {
+                    background-color:#2CA3E7;
+                    color:#FFFFFF;
+                }
+                
+                .footerStyle {			
+                    background-color:#FFFFFF;
+                }
+            </style>
+            
+    </head>
+
+    <body>
+        <div id='capp'>    
+             <div class="noprint">
+                        Level:  
+                        <Select v-model="sudoku_level_model" filterable>
+                            <Option v-for="item in sudoku_level_list" :value="item.value" :key="item.value">{{ item.label }}</Option>
+                        </Select>
+						<!--
+                        Show Answer: 
+                        <Select v-model="sudoku_mode_model" filterable>
+                            <Option v-for="item in sudoku_mode_list" :value="item.value" :key="item.value">{{ item.label }}</Option>
+                        </Select>
+						-->
+                        <br />
+                        <hr />
+              </div>       
+              <div>
+                <sudoku id = 'mxmnc' :level='sudoku_level_model' :mode = 'sudoku_mode_model'></sudoku>
+              </div>    
+        </div>
+
+        
+        <!-- referred common lib, such as vue -->
+        <script src="./vendor.bundle.js" ></script>
+        <!-- js the app itself -->
+        <script src="./app.bundle.js" ></script>
+        
+    </body>    
+</html>
